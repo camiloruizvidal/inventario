@@ -9,19 +9,20 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
         <link href="css/font-awesome.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <script src="js/excanvas.min.js"></script> 
-        <script src="js/chart.min.js" type="text/javascript"></script> 
-
-        <script src="js/full-calendar/jquery.min.js" type="text/javascript"></script>
-        <script language="javascript" type="text/javascript" src="js/full-calendar/jquery-ui.custom.min.js"></script>
-        <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
-        <script language="javascript" type="text/javascript" src="js/full-calendar/jquery.min.js"></script>
-        <script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
-        <script language="javascript" type="text/javascript" src="js/full-calendar/moment.min.js"></script>
-        <script src="js/base.js"></script> 
-
         <link href="css/pages/dashboard.css" rel="stylesheet">
 
+        <script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script> 
+        <script language="javascript" type="text/javascript" src="js/chart.min.js" type="text/javascript"></script> 
+        
+        <script language="javascript" type="text/javascript" src="js/full-calendar/jquery.min.js" type="text/javascript"></script>
+        <script language="javascript" type="text/javascript" src="js/full-calendar/jquery-ui.custom.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
+        
+        <script language="javascript" type="text/javascript" src="js/full-calendar/moment.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+        <!--<script language="javascript" type="text/javascript" src="js/base.js"></script>--> 
+
+        <script language="javascript" type="text/javascript" src="js/agenda.js"></script> 
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -220,6 +221,6 @@
 
             };
         </script><!-- /Calendar -->
-        <script src="js/agenda.js"></script> 
+
     </body>
 </html>
