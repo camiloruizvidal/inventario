@@ -1040,3 +1040,42 @@ $.fn.EnviarFormResp = function ()
     });
     return  jqXHR.responseText;
 };
+$.fn.graficar = function (data)
+{
+    $(this).highcharts({
+        chart: {
+            type: data.tipo_char
+        },
+        title: {
+            text: data.titulo,
+            x: -20 //center
+        },
+        subtitle: {
+            text: data.subtitulo,
+            x: -20
+        },
+        xAxis: {
+            categories: data.serie_x
+        },
+        yAxis: {
+            title: {
+                text: data.title_y
+            },
+            plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+        },
+        tooltip: {
+            valueSuffix: '$'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: data.data
+    });
+};

@@ -6,10 +6,12 @@ if (!$_SESSION)
 }
 $locationmenu = $_SERVER['REQUEST_URI'];
 $locationmenu = (end(explode('/', $locationmenu)));
-$active       = array('', '', '', '', '', '');
+$active       = array('', '', '', '', '', '', '');
 switch ($locationmenu)
 {
     case 'productos_new.php':$active[6] = ' class="active"';
+        break;
+    case 'dashboard.php':$active[0] = ' class="active"';
         break;
     default :$active[0] = ' class="active"';
 }
