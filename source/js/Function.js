@@ -1,3 +1,4 @@
+var res_form;
 /*
  function toast_options(title, msn)
  {
@@ -42,6 +43,7 @@
  */
 $(function ()
 {
+    res_form = null;
     var d = new Date();
     var month = d.getMonth() + 1;
     var day = d.getDate();
@@ -1015,7 +1017,27 @@ function Notification_msg(title, msg, type)
                 }
     });
 }
-$.fn.EnviarForm = function ()
+$.fn.EnviarFormSimple = function ()
 {
-    console.log(this);
+    $(this).submit(function (e)
+    {
+        e.preventDefault();
+        $.ajax({
+            type: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            async: false
+        });
+    });
+};
+$.fn.EnviarFormResp = function ()
+{
+    $(this).submit(false);
+    $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        async: false
+    });
+    return true;
 };
