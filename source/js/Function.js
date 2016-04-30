@@ -1032,12 +1032,11 @@ $.fn.EnviarFormSimple = function ()
 };
 $.fn.EnviarFormResp = function ()
 {
-    $(this).submit(false);
-    $.ajax({
+    var jqXHR = $.ajax({
         type: $(this).attr('method'),
         url: $(this).attr('action'),
         data: $(this).serialize(),
         async: false
     });
-    return true;
+    return  jqXHR.responseText;
 };
