@@ -50,17 +50,7 @@ if(!$_SESSION)
                 <li><a href="calendar.php"><i class="icon-calendar"></i><span>Calendario</span> </a></li>
                 <li><a href="charts.php"><i class="icon-bar-chart"></i><span>Gráficas</span> </a> </li>
                 <li><a href="shortcodes.php"><i class="icon-code"></i><span>Código fuente</span> </a> </li>
-                <!--<li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><span>Drops</span> <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="icons.php">Icons</a></li>
-                    <li><a href="faq.php">FAQ</a></li>
-                    <li><a href="pricing.php">Pricing Plans</a></li>
-                    <li><a href="login.php">Login</a></li>
-                    <li><a href="signup.php">Signup</a></li>
-                    <li><a href="error.php">404</a></li>
-                  </ul>
-                </li>
-                -->
+                <li><a href="productos_new.php"><i class="icon-truck"></i><span>Código fuente</span> </a> </li>
             </ul>
         </div>
     </div>
